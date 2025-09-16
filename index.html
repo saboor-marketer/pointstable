@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSL & IPL Points Table 2024</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://www.psl-t20.com/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h1 class="text-center mb-5">Cricket Leagues Points Table</h1>
+        
+        <div class="row g-4">
+            <!-- HBL PSL Table -->
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-lg fade-in" id="psl-card">
+                    <div class="card-header psl-gradient text-white">
+                        <div class="d-flex justify-content-center align-items-center mb-2">
+                            <img src="" id="psl-league-logo" alt="HBL PSL Logo" class="league-logo me-2">
+                            <h2 class="mb-0">HBL PSL 2024</h2>
+                        </div>
+                        <p class="text-center mb-0">After 8 Matches</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="psl-table">
+                                <thead>
+                                    <tr>
+                                        <th>Team</th>
+                                        <th>P</th>
+                                        <th>W</th>
+                                        <th>L</th>
+                                        <th>NR</th>
+                                        <th>PTS</th>
+                                        <th>NRR</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="psl-tbody">
+                                    <!-- Will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TATA IPL Table -->
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-lg fade-in" id="ipl-card">
+                    <div class="card-header ipl-gradient text-white">
+                        <div class="d-flex justify-content-center align-items-center mb-2">
+                            <img src="" id="ipl-league-logo" alt="TATA IPL Logo" class="league-logo me-2">
+                            <h2 class="mb-0">TATA IPL 2024</h2>
+                        </div>
+                        <p class="text-center mb-0">After 8 Matches</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="ipl-table">
+                                <thead>
+                                    <tr>
+                                        <th>Team</th>
+                                        <th>P</th>
+                                        <th>W</th>
+                                        <th>L</th>
+                                        <th>NR</th>
+                                        <th>PTS</th>
+                                        <th>NRR</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ipl-tbody">
+                                    <!-- Will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bubble Container -->
+    <div id="bubbles"></div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
